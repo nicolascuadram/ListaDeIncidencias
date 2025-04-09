@@ -37,7 +37,10 @@ export default function Sidebar() {
                     <a
                         href="#"
                         className={`flex items-center px-6 py-3 ${activeItem === 'reportes' ? 'bg-red-50 border-l-4 border-red-500' : ''}`}
-                        onClick={() => setActiveItem('reportes')}
+                        onClick={() => {
+                            setActiveItem('reportes');
+                            window.location.href = '/reportes'; // Cambia '/reportes' por la ruta deseada
+                        }}
                     >
                         <span className="mr-3">
                             <svg viewBox="0 0 24 24" className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor">
@@ -50,7 +53,10 @@ export default function Sidebar() {
                     <a
                         href="#"
                         className={`flex items-center px-6 py-3 ${activeItem === 'mapa' ? 'bg-red-50 border-l-4 border-red-500' : ''}`}
-                        onClick={() => setActiveItem('mapa')}
+                        onClick={() => {
+                            setActiveItem('mapa');
+                            window.location.href = '/mapa'; // Cambia '/mapa' por la ruta deseada
+                        }}
                     >
                         <span className="mr-3">
                             <svg viewBox="0 0 24 24" className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor">
@@ -66,7 +72,13 @@ export default function Sidebar() {
                 <h2 className="px-6 text-xs font-semibold text-gray-600 uppercase tracking-wide mb-3">OPCIONES</h2>
 
                 <nav className="mt-2">
-                    <a href="#" className="flex items-center px-6 py-3">
+                    <a
+                        href="#"
+                        className="flex items-center px-6 py-3"
+                        onClick={() => {
+                            window.location.href = '/mi-cuenta'; // Cambia '/mi-cuenta' por la ruta deseada
+                        }}
+                    >
                         <span className="mr-3">
                             <svg viewBox="0 0 24 24" className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor">
                                 <circle cx="12" cy="12" r="8" strokeWidth="2" />
@@ -76,7 +88,13 @@ export default function Sidebar() {
                         <span className="text-lg text-gray-700">Mi Cuenta</span>
                     </a>
 
-                    <a href="#" className="flex items-center px-6 py-3">
+                    <a
+                        href="#"
+                        className="flex items-center px-6 py-3"
+                        onClick={() => {
+                            window.location.href = '/cerrar-sesion'; // Cambia '/cerrar-sesion' por la ruta deseada
+                        }}
+                    >
                         <span className="mr-3">
                             <svg viewBox="0 0 24 24" className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor">
                                 <path d="M15 3H7a2 2 0 00-2 2v14a2 2 0 002 2h8m4-9l-4-4m0 0l-4 4m4-4v12" strokeWidth="2" />

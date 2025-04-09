@@ -3,10 +3,9 @@ import CardIncidencia from './CardIncidencia';
 export default function IncidenciasList() {
 
     const incidencias = [
-        { id: 1, title: 'No hay proyector en la sala 104', type: 'Material', author: 'Javier Gamboa' },
-        { id: 2, title: 'No hay proyector en la sala 104', type: 'Material', author: 'Javier Gamboa' },
-        { id: 3, title: 'No hay proyector en la sala 104', type: 'Material', author: 'Javier Gamboa' },
-        { id: 4, title: 'No hay proyector en la sala 104', type: 'Material', author: 'Javier Gamboa' },
+        { id: 2, title: 'Hay un perro en la sala S-2', type: 'Animal', author: 'Rafael Gonzalez' },
+        { id: 3, title: 'No hay luz en la sala 104', type: 'Material', author: 'Nicolas Cuadra' },
+        { id: 4, title: 'No hay sillas en la sala 102', type: 'Material', author: 'Vejat Olea' },
     ];
 
     return (
