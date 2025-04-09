@@ -8,10 +8,7 @@ export default function Sidebar() {
             <div className="p-6 border-b border-gray-200">
                 <div className="flex items-center">
                     <div className="w-10 h-10 mr-3">
-                        <svg viewBox="0 0 24 24" className="w-full h-full text-red-600" fill="currentColor">
-                            <rect x="2" y="6" width="20" height="12" rx="2" />
-                            <rect x="6" y="2" width="12" height="4" fill="white" />
-                        </svg>
+                        <img src="/favicon.svg" alt="Logo" className="w-10 h-10" />
                     </div>
                     <h1 className="text-2xl font-bold text-red-600">Incidencias Utal</h1>
                 </div>
