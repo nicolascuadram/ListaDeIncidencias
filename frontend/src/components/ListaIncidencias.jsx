@@ -7,6 +7,7 @@ export default function IncidenciasList() {
     const [incidencias, setIncidencias] = useState(incidenciasData);
     const [nuevaIncidencia, setNuevaIncidencia] = useState({ title: '', type: '', author: '' });
 
+<<<<<<< HEAD
     // Función para crear una nueva incidencia
     const handleCrearIncidencia = (e) => {
         e.preventDefault();
@@ -38,6 +39,13 @@ export default function IncidenciasList() {
     const handleInputChange = (e) => {
         setNuevaIncidencia({ ...nuevaIncidencia, [e.target.name]: e.target.value });
     };
+=======
+    const incidencias = [
+        { id: 2, title: 'Hay un perro en la sala S-2', type: 'Animal', author: 'Rafael Gonzalez' },
+        { id: 3, title: 'No hay luz en la sala 104', type: 'Material', author: 'Nicolas Cuadra' },
+        { id: 4, title: 'No hay sillas en la sala 102', type: 'Material', author: 'Vejat Olea' },
+    ];
+>>>>>>> c02c98622a11c04e63c5ef975d987ce3d86bc181
 
     return (
         <div>
