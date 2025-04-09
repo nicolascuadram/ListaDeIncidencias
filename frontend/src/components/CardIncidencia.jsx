@@ -71,7 +71,7 @@ export default function IncidenciaCard({ incidencia, onEliminar, onModificar }) 
                             <span className="text-gray-600">{incidencia.author}</span>
                             <button
                                 onClick={() => setIsEditing(true)}
-                                className="p-1 rounded-full bg-gray-100 hover:bg-gray-200"
+                                className="p-1 rounded-full cursor-pointer"
                                 title="Editar"
                             >
                                 <svg
@@ -92,7 +92,7 @@ export default function IncidenciaCard({ incidencia, onEliminar, onModificar }) 
                             </button>
                             <button
                                 onClick={() => onEliminar(incidencia.id)}
-                                className="p-1 rounded-full bg-gray-100 hover:bg-gray-200"
+                                className="p-1 rounded-full cursor-pointer"
                                 title="Eliminar"
                             >
                                 <svg
