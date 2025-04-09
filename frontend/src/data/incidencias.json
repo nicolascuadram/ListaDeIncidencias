@@ -1,0 +1,6 @@
+[
+    { "id": 1, "title": "No hay proyector en la sala 104", "type": "Material", "author": "Javier Gamboa" },
+    { "id": 2, "title": "Falla el aire acondicionado en sala 201", "type": "Infraestructura", "author": "Ana Pérez" },
+    { "id": 3, "title": "Internet lento en laboratorio 3", "type": "Tecnología", "author": "Luis Martínez" },
+    { "id": 4, "title": "Silla rota en aula 305", "type": "Material", "author": "María López" }
+]
