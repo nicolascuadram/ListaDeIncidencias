@@ -22,7 +22,7 @@ export default function Sidebar() {
 
                 <nav className="mt-2">
                     <a
-                        href="#"
+                        href="/"
                         className={`flex items-center px-6 py-3 ${activeItem === 'incidencias' ? 'bg-red-50 border-l-4 border-red-500' : ''}`}
                         onClick={() => setActiveItem('incidencias')}
                     >
@@ -35,7 +35,7 @@ export default function Sidebar() {
                     </a>
 
                     <a
-                        href="#"
+                        href="/reportes"
                         className={`flex items-center px-6 py-3 ${activeItem === 'reportes' ? 'bg-red-50 border-l-4 border-red-500' : ''}`}
                         onClick={() => {
                             setActiveItem('reportes');
@@ -51,7 +51,7 @@ export default function Sidebar() {
                     </a>
 
                     <a
-                        href="#"
+                        href="/mapa"
                         className={`flex items-center px-6 py-3 ${activeItem === 'mapa' ? 'bg-red-50 border-l-4 border-red-500' : ''}`}
                         onClick={() => {
                             setActiveItem('mapa');

@@ -1,5 +1,5 @@
 ---
-import OtroLayout from "../layouts/Layout.jsx";
+import Sidebar from "../components/Sidebar.jsx";
 import "../styles/global.css";
 ---
 
@@ -13,6 +13,11 @@ import "../styles/global.css";
 		<title>Incidencias Utal</title>
 	</head>
 	<body>
-		<OtroLayout client:load />
+		<div class="flex h-screen bg-gray-100">
+            <Sidebar />
+			<main class="flex-1 overflow-y-auto p-6">
+				<slot />
+			</main>
+        </div>
 	</body>
 </html>
