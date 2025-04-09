@@ -76,7 +76,7 @@ export default function Sidebar() {
                         href="#"
                         className="flex items-center px-6 py-3"
                         onClick={() => {
-                            window.location.href = '/mi-cuenta'; // Cambia '/mi-cuenta' por la ruta deseada
+                            window.location.href = '/micuenta'; // Cambia '/mi-cuenta' por la ruta deseada
                         }}
                     >
                         <span className="mr-3">
@@ -92,7 +92,7 @@ export default function Sidebar() {
                         href="#"
                         className="flex items-center px-6 py-3"
                         onClick={() => {
-                            window.location.href = '/cerrar-sesion'; // Cambia '/cerrar-sesion' por la ruta deseada
+                            window.location.href = '/cerrarsesion'; // Cambia '/cerrar-sesion' por la ruta deseada
                         }}
                     >
                         <span className="mr-3">
